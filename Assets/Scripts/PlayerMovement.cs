@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     //}
 
 
+    
+
     private void Update()
     {
 
@@ -49,9 +51,16 @@ public class PlayerMovement : MonoBehaviour
             anim.SetInteger("condition", 1);
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        
-            
-        
+
+        //Keeps Spaceman from falling infinitely
+        //Viewport coordinates start at (0,0) in the lower left of the screen and go to (1,1) in the upper right.
+        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+        pos.x = Mathf.Clamp01(pos.x);
+        pos.y = Mathf.Clamp(pos.y,0.2f,1);
+        transform.position = Camera.main.ViewportToWorldPoint(pos);
+
+
+
 
         //here we set our player x velocity and y will not ne 
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
