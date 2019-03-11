@@ -14,6 +14,20 @@ public class PlayerScript : MonoBehaviour
     private Vector2 movement;
     private Rigidbody2D rigidbodyComponent;
 
+    //2.1 buttons (Johnny)
+    protected Button leftButton;
+    protected Button rightButton;
+    protected Button aButton;
+    protected Button bButton;
+
+    private void Start()
+    {
+           //Working on this (Johnny)
+        //leftButton = FindObjectOfType<Button>();
+        //rightButton = FindObjectOfType<Button>();
+        //aButton = FindObjectOfType<Button>();
+        //bButton = FindObjectOfType<Button>();
+    }
     void Update()
     {
         // 3 - Retrieve axis information
@@ -21,13 +35,8 @@ public class PlayerScript : MonoBehaviour
         float inputY = Input.GetAxis("Vertical");
 
         // 4 - Movement per direction
-        movement = new Vector2(
-          speed.x * inputX,
-          speed.y * inputY);
-        //if (inputX < 0)
-        //{
-        //    transform.Rotate(0f, 180f, 0f);
-        //}
+        movement = new Vector2(speed.x * inputX, speed.y * inputY);
+
         // 5 - Shooting
         bool shoot = Input.GetButtonDown("Fire1");
         shoot |= Input.GetButtonDown("Fire2");
