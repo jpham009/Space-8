@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
         anim.SetInteger("condition", 0);
         //the moveInput will be 1 when we press right key and -1 for left key
-        moveInput = Input.GetAxis("Horizontal");
+        moveInput = CrossPlatformInputManager.GetAxis("Horizontal");
         if (moveInput > 0)//moving towards right side
         {
             anim.SetInteger("condition", 1);
