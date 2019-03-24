@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class LoadLevel : MonoBehaviour
 {
 
-    public GameObject TransitionLevel;
+    public GameObject TransitionExit;
     public string levelToLoad;
 
     void Start()
     {
-        TransitionLevel.SetActive(false);
+        TransitionExit.SetActive(false);
     }
 
     // Update is called once per frame
@@ -19,8 +19,8 @@ public class LoadLevel : MonoBehaviour
     {
         if (plyr.gameObject.tag == "Player")
         {
-            TransitionLevel.SetActive(true);
-            if (TransitionLevel.activeInHierarchy==true)
+            TransitionExit.SetActive(true);
+            if (TransitionExit.activeInHierarchy==true)
             {
                 SceneManager.LoadScene(levelToLoad);
             }
@@ -30,7 +30,7 @@ public class LoadLevel : MonoBehaviour
     {
         if (plyr.gameObject.tag == "Player")
         {
-            TransitionLevel.SetActive(false);
+            TransitionExit.SetActive(false);
         }
     }
 }
