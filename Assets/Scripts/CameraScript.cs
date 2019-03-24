@@ -10,6 +10,7 @@ public class CameraScript : MonoBehaviour
     public GameObject player;
     private Vector3 offset;         //Private variable to store the offset distance between the player and camera
 
+
     void Start()
     {
         //just turn camera in Inspector, for example
