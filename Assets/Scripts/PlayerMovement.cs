@@ -132,8 +132,20 @@ public class PlayerMovement : MonoBehaviour
             anim.SetInteger("condition", 0);
         }
 
-
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        print("Enter");
+        Destroy(rb);
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+        //if (other.CompareTag("Bound") == true)
+        //{
+            print("Exit");  
+            Destroy(rb);
+        //}
+    }
 }
