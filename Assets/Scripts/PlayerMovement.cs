@@ -72,10 +72,10 @@ public class PlayerMovement : MonoBehaviour
         {
             doubleJumped = false;
         }
-        
+
 
         // User input for Jump and Double Jump 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //|| CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             if (isGrounded == true)
             {
@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //if Space key is pressed and isJumping is true
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space)) // || CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             if (isJumping == false)
             {
@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))              //if we unpress the Space key
+        if (Input.GetKeyUp(KeyCode.Space)) //|| CrossPlatformInputManager.GetButtonDown("Jump"))              //if we unpress the Space key
         {
             rb.drag = 0;                                // back to normal gravity
             isJumping = false;                          //set isJumping to false
