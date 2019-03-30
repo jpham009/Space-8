@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         //Viewport coordinates start at (0,0) in the lower left of the screen and go to (1,1) in the upper right.
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         pos.x = Mathf.Clamp01(pos.x);
-        pos.y = Mathf.Clamp(pos.y,0.2f,1);
+        //pos.y = Mathf.Clamp(pos.y,0.2f,1); I commentted this out because the character needs to fall below camera view. 
         transform.position = Camera.main.ViewportToWorldPoint(pos);
 
 
@@ -136,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("Enter");
+        Debug.Log("entered");
         Destroy(rb);
     }
 
@@ -144,8 +144,8 @@ public class PlayerMovement : MonoBehaviour
     {
         //if (other.CompareTag("Bound") == true)
         //{
-            print("Exit");  
-            Destroy(rb);
+        Debug.Log("exit");
+        Destroy(rb);
         //}
     }
 }
