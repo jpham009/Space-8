@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PitfallScript : MonoBehaviour
+public class HealthPackScript : MonoBehaviour
 {
-
+    public Collider col;
     public GameObject player;
     private PlayerHealth playerHealth;
     // Start is called before the first frame update
@@ -13,21 +13,17 @@ public class PitfallScript : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.name == "DeathPit")
+        if (col.gameObject.tag == "Player")
         {
-            Debug.Log("entered " + col.name);
+            Debug.Log("touched health");
+            player = GameObject.FindGameObjectWithTag("Player");
             playerHealth = player.GetComponent<PlayerHealth>();
-            playerHealth.currentHealth = 0;
-            //player.currentHealth = 0; 
-            Destroy(player);
+            playerHealth.HealPlayer();
+            Destroy(this);
         }
-           
     }
+    
 }
