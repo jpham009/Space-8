@@ -7,6 +7,7 @@ TagManager:
   - Deathpit
   - Health Pack
   - Oxygen Bubble
+  - Background
   layers:
   - Default
   - TransparentFX

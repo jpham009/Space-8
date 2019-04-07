@@ -18062,7 +18062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1024253757}
-  offset: {x: 0.5, y: 3, z: -5}
+  offset: {x: 0.5, y: 3.5, z: -5}
   smoothSpeed: 0.125
   maxHeight: 5
   minHeight: -1
@@ -18857,6 +18857,14 @@ PrefabInstance:
       propertyPath: barGradient.ctime0
       value: 5783
       objectReference: {fileID: 0}
+    - target: {fileID: 11426762, guid: e92f6e57db53df642a211b14847db5f1, type: 3}
+      propertyPath: barColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426762, guid: e92f6e57db53df642a211b14847db5f1, type: 3}
+      propertyPath: barColor.a
+      value: 0.9019608
+      objectReference: {fileID: 0}
     - target: {fileID: 22485346, guid: e92f6e57db53df642a211b14847db5f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -18996,14 +19004,6 @@ PrefabInstance:
     - target: {fileID: 11496976, guid: e92f6e57db53df642a211b14847db5f1, type: 3}
       propertyPath: m_FillAmount
       value: 0.835
-      objectReference: {fileID: 0}
-    - target: {fileID: 11426762, guid: e92f6e57db53df642a211b14847db5f1, type: 3}
-      propertyPath: barColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11426762, guid: e92f6e57db53df642a211b14847db5f1, type: 3}
-      propertyPath: barColor.a
-      value: 0.9019608
       objectReference: {fileID: 0}
     - target: {fileID: 22229484, guid: e92f6e57db53df642a211b14847db5f1, type: 3}
       propertyPath: m_CullTransparentMesh
@@ -19226,9 +19226,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2132427967}
   - component: {fileID: 2132427968}
+  - component: {fileID: 2132427969}
   m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19241,8 +19242,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132427966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.8, y: 13.7, z: 5}
-  m_LocalScale: {x: 4, y: 3, z: 1}
+  m_LocalPosition: {x: -2.03, y: 2.38, z: 5}
+  m_LocalScale: {x: 1.3678396, y: 1.324837, z: 1}
   m_Children: []
   m_Father: {fileID: 1178828129}
   m_RootOrder: 0
@@ -19295,6 +19296,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2132427969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132427966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd4f2077eb212f4e8634ae3632f5466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frame: {fileID: 460093735}
+  offset: {x: 0, y: 0, z: 0}
+  offX: 0
+  offY: 0
 --- !u!1 &2138291226
 GameObject:
   m_ObjectHideFlags: 0
