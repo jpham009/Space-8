@@ -25,8 +25,9 @@ public class PitfallScript : MonoBehaviour
             Debug.Log("entered " + col.name);
             playerHealth = player.GetComponent<PlayerHealth>();
             playerHealth.currentHealth = 0;
+            playerHealth.currentOxygen = 0;
             //player.currentHealth = 0; 
-            Destroy(player);
+            //Destroy(player);
         }
            
     }

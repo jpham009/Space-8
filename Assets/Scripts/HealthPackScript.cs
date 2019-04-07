@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class HealthPackScript : MonoBehaviour
 {
-    public Collider col;
+    public GameObject healthItem;
+    private Collider playerCollider;
     public GameObject player;
     private PlayerHealth playerHealth;
     // Start is called before the first frame update
@@ -14,15 +15,30 @@ public class HealthPackScript : MonoBehaviour
     }
 
    
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D playerCollider)
     {
-        if (col.gameObject.tag == "Player")
+        if (playerCollider.gameObject.tag == "Player")
         {
-            Debug.Log("touched health");
-            player = GameObject.FindGameObjectWithTag("Player");
-            playerHealth = player.GetComponent<PlayerHealth>();
-            playerHealth.HealPlayer();
-            Destroy(this);
+            if (healthItem.gameObject.tag == "Health Pack")
+            {
+                Debug.Log("touched health");
+                player = GameObject.FindGameObjectWithTag("Player");
+                playerHealth = player.GetComponent<PlayerHealth>();
+                playerHealth.HealPlayer();
+                Destroy(healthItem);
+            }
+            else if(healthItem.gameObject.tag == "Oxygen Bubble")
+            {
+                Debug.Log("oxy bubble");
+                player = GameObject.FindGameObjectWithTag("Player");
+                playerHealth = player.GetComponent<PlayerHealth>();
+                playerHealth.Breathe();
+                Destroy(healthItem);
+            }
+            else
+            {
+                Debug.Log("unknown item");
+            }
         }
     }
     

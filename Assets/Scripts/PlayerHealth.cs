@@ -10,12 +10,16 @@ public class PlayerHealth : MonoBehaviour
     bool canTakeDamage = true;
 
     public int maxHealth = 100;
+    public int maxOxygen = 100; 
     public float currentHealth;
+    public float currentOxygen;
     public float invulnerabilityTime = 0.5f;
     public Camera cam;
     public GameObject player;
 
     public SimpleHealthBar healthBar;
+    public SimpleHealthBar oxygenBar;
+
 
 
     void Awake()
@@ -31,26 +35,40 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         // Set the current health and shield to max values.
-        currentHealth = maxHealth;
+        //currentHealth = maxHealth;
+
+        //Test
+        currentHealth = 81;
+        currentOxygen = maxOxygen;
 
         // Update the Simple Health Bar with the updated values of Health and Shield.
         healthBar.UpdateBar(currentHealth, maxHealth);
-
+        oxygenBar.UpdateBar(currentOxygen, maxOxygen);
     }
 
     void Update()
     {
         // Testing playerHealth 
-        currentHealth -= (float) 0.05;
+        //currentHealth -= (float) 0.05;
+
+        // Testing oxygen affecting health 
+        currentOxygen -= (float) 0.1; 
+
+        if(currentOxygen <= 0)
+        {
+            currentOxygen = 0;
+            currentHealth -= (float) 0.08;
+        }
 
         // Update HealthBar
         healthBar.UpdateBar(currentHealth, maxHealth);
+        oxygenBar.UpdateBar(currentOxygen, maxOxygen);
 
         if (currentHealth <= 0)
         {
             //Set the current health to zero.
             currentHealth = 0;
-            //Destroy(player);
+           Destroy(player);
             // ShakeCamera();
         }
     }
@@ -94,6 +112,16 @@ public class PlayerHealth : MonoBehaviour
         healthBar.UpdateBar(currentHealth, maxHealth);
 
     }
+
+    public void Breathe()
+    {
+        // Increase the current health by 25%.
+        currentOxygen = 100;
+
+        // Update the Simple Health Bar with the new Health values.
+        oxygenBar.UpdateBar(currentOxygen, maxOxygen);
+    }
+
 }
 
 /* for reference.... 

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Deathpit
+  - Health Pack
+  - Oxygen Bubble
   layers:
   - Default
   - TransparentFX
