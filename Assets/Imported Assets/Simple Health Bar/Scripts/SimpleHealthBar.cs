@@ -1,10 +1,6 @@
-﻿/* Written by Kaz Crowe */
-/* SimpleHealthBar.cs */
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-[ExecuteInEditMode]
-[AddComponentMenu( "UI/Simple Health Bar/Simple Health Bar" )]
 public class SimpleHealthBar : MonoBehaviour
 {	
 	// COLOR OPTIONS //
