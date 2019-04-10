@@ -8,6 +8,7 @@ TagManager:
   - Health Pack
   - Oxygen Bubble
   - Background
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

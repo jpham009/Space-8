@@ -148,4 +148,22 @@ public class PlayerMovement : MonoBehaviour
         Destroy(rb);
         //}
     }
+
+    // used for sticking player to moving platform
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.transform.tag == "MovingPlatform")
+        {
+            transform.parent = other.transform;
+        }
+    }
+
+    // unsticking player from platform after jumping off
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.transform.tag == "MovingPlatform")
+        {
+            transform.parent = null;
+        }
+    }
 }
