@@ -18,7 +18,7 @@ public class bullet : MonoBehaviour
     void OnTriggerEnter2D (Collider2D hitInfo)
     {
         Debug.Log(hitInfo.name);
-
+        if (hitInfo.gameObject.tag == "Health Pack") { return; }
         /*Enemy enemy = hitInfo.GetComponent<Enemy>();
         if(enemy != null)
         {
@@ -30,6 +30,6 @@ public class bullet : MonoBehaviour
         Destroy(bulletHit, 0.5f);
 
         // bullet disappears after hitting object
-        Destroy(gameObject);
+        Destroy(impactEffect);
     }
 }

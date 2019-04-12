@@ -18962,9 +18962,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1496687904}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Items
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19610,6 +19610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OxygenBubble
       objectReference: {fileID: 0}
+    - target: {fileID: 2090402445014247802, guid: 3be8006a79c30dd4fa3e20e8c70786a8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2090402445014247803, guid: 3be8006a79c30dd4fa3e20e8c70786a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19906,6 +19911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HealthPack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439679399925567471, guid: 40d727093c7a787478d51db3ae59bfe3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6439679399925567468, guid: 40d727093c7a787478d51db3ae59bfe3,
         type: 3}
