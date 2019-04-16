@@ -17,7 +17,7 @@ public class Weapon : MonoBehaviour
         
     }
 
-    void Shoot()
+    public void Shoot()
     {
         // creates a shooting bullet and destroys after some time
         GameObject bullet = (GameObject)Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
