@@ -22,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
 
 
 
-    void Awake()
+/*    void Awake()
     {
         // If the instance variable is already assigned, then there are multiple player health scripts in the scene. Inform the user.
         if (instance != null)
@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
         // Assign the instance variable as the Player Health script on this object.
         instance = GetComponent<PlayerHealth>();
     }
-
+*/
     void Start()
     {
         // Set the current health and shield to max values.
