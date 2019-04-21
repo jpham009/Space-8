@@ -8,8 +8,9 @@ public class LoadScene2 : MonoBehaviour
     public Collider2D col; 
 
     void OnTriggerEnter2D(Collider2D col)
-    {   
-        if(col.tag == "Player")
+    {
+        PlayerPrefs.SetInt("Score",(int)Score.scoreValue);
+        if (col.tag == "Player")
         SceneManager.LoadScene("Edgar_Scene", LoadSceneMode.Single);
     }
 

@@ -19,9 +19,9 @@ EditorBuildSettings:
     guid: fcc195f301a6c1946a10e0657a839a3a
   - enabled: 1
     path: Assets/Scenes/Jessica_Scene.unity
-    guid: 534e424aa43575543bc9a0f9500d0172
+    guid: 7be62427f3b55e34da0ee9432e40fb00
   - enabled: 1
-    path: Assets/Scenes/Linda_Scene.unity
+    path: Assets/Scenes/Linda_scene.unity
     guid: 3c7736a67152dd543900ecf5d490871c
   - enabled: 1
     path: Assets/Scenes/Scene5.unity

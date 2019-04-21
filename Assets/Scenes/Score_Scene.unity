@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 689734567}
   - component: {fileID: 689734569}
   - component: {fileID: 689734568}
+  - component: {fileID: 689734570}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -285,7 +286,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 0
 --- !u!222 &689734569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -294,6 +295,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689734566}
   m_CullTransparentMesh: 0
+--- !u!114 &689734570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689734566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee97a280b97fdb4798b4b6d0435ccab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &800112582
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +534,7 @@ GameObject:
   - component: {fileID: 1082121401}
   - component: {fileID: 1082121403}
   - component: {fileID: 1082121402}
+  - component: {fileID: 1082121404}
   m_Layer: 5
   m_Name: LevelScore
   m_TagString: Untagged
@@ -580,7 +594,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 0
 --- !u!222 &1082121403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -589,6 +603,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082121400}
   m_CullTransparentMesh: 0
+--- !u!114 &1082121404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082121400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b796be06518b5dd40996bf23f6188be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScoreText: {fileID: 1082121402}
+  highScoreText: {fileID: 689734568}
 --- !u!1 &1170380351
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,7 +864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 0
 --- !u!222 &1316759851
 CanvasRenderer:
   m_ObjectHideFlags: 0
