@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Settings.unity
     guid: b57d4a1cf3eea7844b8da8129390f396
   - enabled: 1
-    path: Assets/Scenes/Scene 1.unity
+    path: Assets/Scenes/Johnny_Scene.unity
     guid: dfed7976e08031f4981e65e2128945b0
   - enabled: 1
     path: Assets/Scenes/Edgar_Scene.unity
@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Jessica_Scene.unity
     guid: 534e424aa43575543bc9a0f9500d0172
   - enabled: 1
-    path: Assets/Scenes/Linda_scene.unity
+    path: Assets/Scenes/Linda_Scene.unity
     guid: 3c7736a67152dd543900ecf5d490871c
   - enabled: 1
     path: Assets/Scenes/Scene5.unity
