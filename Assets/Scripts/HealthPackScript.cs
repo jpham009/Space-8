@@ -26,6 +26,7 @@ public class HealthPackScript : MonoBehaviour
                 playerHealth = player.GetComponent<PlayerHealth>();
                 playerHealth.HealPlayer();
                 Destroy(healthItem);
+                Score.scoreValue += 5;
             }
             else if(healthItem.gameObject.tag == "Oxygen Bubble")
             {
@@ -34,6 +35,7 @@ public class HealthPackScript : MonoBehaviour
                 playerHealth = player.GetComponent<PlayerHealth>();
                 playerHealth.Breathe();
                 Destroy(healthItem);
+                Score.scoreValue += 5;
             }
             else
             {

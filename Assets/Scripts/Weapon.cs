@@ -21,6 +21,7 @@ public class Weapon : MonoBehaviour
     {
         // creates a shooting bullet and destroys after some time
         GameObject bullet = (GameObject)Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+        Score.scoreValue -= 1;
         Destroy(bullet, 1.2f);
     }
 }
