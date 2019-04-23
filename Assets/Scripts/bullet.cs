@@ -30,6 +30,6 @@ public class bullet : MonoBehaviour
         Destroy(bulletHit, 0.5f);
 
         // bullet disappears after hitting object
-        Destroy(impactEffect);
+        Destroy(gameObject);
     }
 }
