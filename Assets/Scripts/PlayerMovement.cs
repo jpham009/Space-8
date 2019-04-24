@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isJumping == false)
             {
-                rb.drag = 8;  // Gravity jump (drag when falling) 
+                rb.drag = 6;  // Gravity jump (drag when falling) 
             }
             
             if (isJumping == true)
