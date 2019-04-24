@@ -11,6 +11,7 @@ TagManager:
   - MovingPlatform
   - Item
   - Enemy
+  - UI
   layers:
   - Default
   - TransparentFX
@@ -38,7 +39,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - UX
   - 
   - 
   - 
