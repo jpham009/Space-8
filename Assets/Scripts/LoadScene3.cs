@@ -13,6 +13,7 @@ public class LoadScene3 : MonoBehaviour
         {
             int level_Score = PlayerPrefs.GetInt("Score") + (int)Score.scoreValue;
             PlayerPrefs.SetInt("Score", level_Score);
+            PlayerPrefs.SetInt("LevelReached", 3);
             SceneManager.LoadScene("Jess_Scene", LoadSceneMode.Single);
         }
     }

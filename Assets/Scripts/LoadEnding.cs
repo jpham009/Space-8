@@ -11,6 +11,9 @@ public class LoadEnding : MonoBehaviour
     {
         if (col.tag == "Player")
         {
+            int level_Score = PlayerPrefs.GetInt("Score") + (int)Score.scoreValue;
+            PlayerPrefs.SetInt("Score", level_Score);
+            PlayerPrefs.SetInt("LevelReached", 5);
             SceneManager.LoadScene("Home Screen", LoadSceneMode.Single);
         }
     }
