@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - UI
   - EnemyWeapon
+  - Tile
   layers:
   - Default
   - TransparentFX
