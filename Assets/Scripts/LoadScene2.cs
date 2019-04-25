@@ -14,7 +14,7 @@ public class LoadScene2 : MonoBehaviour
         PlayerPrefs.SetInt("Score",(int)Score.scoreValue);
         PlayerPrefs.SetInt("LevelReached",2);
         if (col.tag == "Player")
-        SceneManager.LoadScene("Score_Scene", LoadSceneMode.Single);
+        SceneManager.LoadScene("Edgar_Scene", LoadSceneMode.Single);
     }
 
 }

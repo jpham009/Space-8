@@ -31067,7 +31067,7 @@ PrefabInstance:
     - target: {fileID: 2574217686785272933, guid: c976e5b17d81dfc4cb0496695703ccc1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 171.38
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 2574217686785272933, guid: c976e5b17d81dfc4cb0496695703ccc1,
         type: 3}
@@ -31332,21 +31332,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6803215733553617274, guid: aee6dcd6236b8b6478d014710493ec39,
-        type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3147967233325740625, guid: aee6dcd6236b8b6478d014710493ec39,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3147967233325740625, guid: aee6dcd6236b8b6478d014710493ec39,
-        type: 3}
-      propertyPath: m_Mass
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 3456784781638551370, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
       propertyPath: cam
@@ -31366,6 +31351,21 @@ PrefabInstance:
         type: 3}
       propertyPath: invulnerabilityTime
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803215733553617274, guid: aee6dcd6236b8b6478d014710493ec39,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147967233325740625, guid: aee6dcd6236b8b6478d014710493ec39,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147967233325740625, guid: aee6dcd6236b8b6478d014710493ec39,
+        type: 3}
+      propertyPath: m_Mass
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aee6dcd6236b8b6478d014710493ec39, type: 3}
