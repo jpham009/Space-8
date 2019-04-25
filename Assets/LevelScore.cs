@@ -9,7 +9,7 @@ public class LevelScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int lvlScore = PlayerPrefs.GetInt("Score");
+        int lvlScore = PlayerPrefs.GetInt("CurrentScore");
     
         currentScoreText.text = lvlScore.ToString();
        

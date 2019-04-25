@@ -11,9 +11,10 @@ public class LoadScene3 : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            int level_Score = PlayerPrefs.GetInt("Score") + (int)Score.scoreValue;
-            PlayerPrefs.SetInt("Score", level_Score);
+            int level_Score = PlayerPrefs.GetInt("CurrentScore") + (int)Score.scoreValue;
+            PlayerPrefs.SetInt("CurrentScore", level_Score);
             PlayerPrefs.SetInt("LevelReached", 3);
+            //SceneManager.LoadScene("Score_Scene", LoadSceneMode.Single);
             SceneManager.LoadScene("Jess_Scene", LoadSceneMode.Single);
         }
     }

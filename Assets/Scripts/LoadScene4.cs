@@ -11,9 +11,11 @@ public class LoadScene4 : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            int level_Score = PlayerPrefs.GetInt("Score") + (int)Score.scoreValue;
-            PlayerPrefs.SetInt("Score", level_Score);
+            int level_Score = PlayerPrefs.GetInt("CurrentScore") + (int)Score.scoreValue;
+            PlayerPrefs.SetInt("CurrentScore", level_Score);
             PlayerPrefs.SetInt("LevelReached", 4);
+
+            //SceneManager.LoadScene("Score_Scene", LoadSceneMode.Single);
             SceneManager.LoadScene("Linda_Scene", LoadSceneMode.Single);
         }
     }
