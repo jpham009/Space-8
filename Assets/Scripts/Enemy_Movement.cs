@@ -11,6 +11,7 @@ public class Enemy_Movement : MonoBehaviour
 		public float startTimeBtwShots;
 		public GameObject projectile;
 		public Transform player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +36,7 @@ public class Enemy_Movement : MonoBehaviour
         } else {
         	timeBtwShots = Time.deltaTime;
         }
+            if(Mathf.Abs (player.position.x - transform.position.x) < float.Epsilon)
+                            transform.eulerAngles = new Vector3(0, 180, 0);
     }
 }
