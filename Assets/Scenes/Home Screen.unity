@@ -228,7 +228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 353.75, y: -181.6}
+  m_AnchoredPosition: {x: 355, y: -177}
   m_SizeDelta: {x: 200.76, y: 156.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &203854950
@@ -537,7 +537,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -929,7 +929,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -389.2, y: 108}
+  m_AnchoredPosition: {x: -372, y: 205}
   m_SizeDelta: {x: 124.51, y: 62.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435049001
