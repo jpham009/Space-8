@@ -1979,7 +1979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8540bf47ebb81f42ad84cacea4a4830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 3
 --- !u!58 &157609366
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1995,7 +1995,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000009536743, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
 --- !u!114 &211076649 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7473831717417853464, guid: d23eb9126fd411b46a9a4405bf2b9f30,
@@ -2028,12 +2028,12 @@ PrefabInstance:
     - target: {fileID: 137212331473626201, guid: 8113eedeb281d334e96a19c3059d59dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.19
+      value: -1.14
       objectReference: {fileID: 0}
     - target: {fileID: 137212331473626201, guid: 8113eedeb281d334e96a19c3059d59dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.17
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: 137212331473626201, guid: 8113eedeb281d334e96a19c3059d59dc,
         type: 3}
@@ -2083,18 +2083,24 @@ PrefabInstance:
     - target: {fileID: 137212331473626201, guid: 8113eedeb281d334e96a19c3059d59dc,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.503
+      value: 0.292243
       objectReference: {fileID: 0}
     - target: {fileID: 137212331473626201, guid: 8113eedeb281d334e96a19c3059d59dc,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.503
+      value: 0.292243
       objectReference: {fileID: 0}
     - target: {fileID: 137212331473626201, guid: 8113eedeb281d334e96a19c3059d59dc,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.503
+      value: 0.292243
       objectReference: {fileID: 0}
+    - target: {fileID: 137212331473626198, guid: 8113eedeb281d334e96a19c3059d59dc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1ccb1ba52ac7d9f4888e3c7070c0cca2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8113eedeb281d334e96a19c3059d59dc, type: 3}
 --- !u!1 &245249888
@@ -2680,7 +2686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512011898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: -1.96, z: 0}
+  m_LocalPosition: {x: 12.57, y: 5.27, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
