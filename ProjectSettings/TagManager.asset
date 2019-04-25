@@ -12,6 +12,7 @@ TagManager:
   - Item
   - Enemy
   - UI
+  - EnemyWeapon
   layers:
   - Default
   - TransparentFX
