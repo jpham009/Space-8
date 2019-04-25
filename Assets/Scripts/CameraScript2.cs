@@ -35,10 +35,12 @@ public class CameraScript2 : MonoBehaviour
     // LateUpdate is called every frame, if the Behaviour is enabled
     void Update()
     {
-        Vector2 smoothedPosition = Vector2.Lerp(cameraObj.transform.position, player.transform.position + offset, smoothSpeed);
-        //smoothedPosition.y = Mathf.Clamp(smoothedPosition.y, minHeight, maxHeight);
-        transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, player.transform.position.z + offset.z);
-
+        if (player != null)
+        {
+            Vector2 smoothedPosition = Vector2.Lerp(cameraObj.transform.position, player.transform.position + offset, smoothSpeed);
+            //smoothedPosition.y = Mathf.Clamp(smoothedPosition.y, minHeight, maxHeight);
+            transform.position = new Vector3(smoothedPosition.x, smoothedPosition.y, player.transform.position.z + offset.z);
+        }
         //if (perspective)
         //{
         //    transform.LookAt(target);

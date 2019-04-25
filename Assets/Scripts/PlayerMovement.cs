@@ -73,9 +73,9 @@ public class PlayerMovement : MonoBehaviour
             doubleJumped = false;
         }
 
-
+        
         // User input for Jump and Double Jump 
-        if (Input.GetKeyDown(KeyCode.Space)) //|| CrossPlatformInputManager.GetButtonDown("Jump"))
+        if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             if (isGrounded == true)
             {
@@ -93,11 +93,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //if Space key is pressed and isJumping is true
-        if (Input.GetKey(KeyCode.Space)) // || CrossPlatformInputManager.GetButtonDown("Jump"))
+        if (CrossPlatformInputManager.GetButton("Jump")) // || CrossPlatformInputManager.GetButtonDown("Jump"))
         {
             if (isJumping == false)
             {
-                rb.drag = 8;  // Gravity jump (drag when falling) 
+                rb.drag = 6;  // Gravity jump (drag when falling) 
             }
             
             if (isJumping == true)
@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Space)) //|| CrossPlatformInputManager.GetButtonDown("Jump"))              //if we unpress the Space key
+        if (CrossPlatformInputManager.GetButtonUp("Jump")) //|| CrossPlatformInputManager.GetButtonDown("Jump"))              //if we unpress the Space key
         {
             rb.drag = 0;                                // back to normal gravity
             isJumping = false;                          //set isJumping to false
@@ -123,14 +123,14 @@ public class PlayerMovement : MonoBehaviour
 
 
         //down key for crouch
-        if (Input.GetKeyDown(KeyCode.DownArrow) && isGrounded == true)
-        {
-            anim.SetInteger("condition", 3); 
-        }
-        if (Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            anim.SetInteger("condition", 0);
-        }
+        //if (Input.GetKeyDown(KeyCode.DownArrow) && isGrounded == true)
+        //{
+        //    anim.SetInteger("condition", 3); 
+        //}
+        //if (Input.GetKeyUp(KeyCode.DownArrow))
+        //{
+        //    anim.SetInteger("condition", 0);
+        //}
 
     }
 
