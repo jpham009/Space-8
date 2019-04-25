@@ -427,7 +427,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 395103583
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -31980,7 +31980,7 @@ PrefabInstance:
     - target: {fileID: 5165270147994101108, guid: 8ba54b13cd6cac143948022c959dcef3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 868606039518277119, guid: 8ba54b13cd6cac143948022c959dcef3,
         type: 3}
@@ -32161,6 +32161,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3147967233325740625, guid: aee6dcd6236b8b6478d014710493ec39,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3456784781638551370, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
       propertyPath: cam
@@ -32180,11 +32185,6 @@ PrefabInstance:
         type: 3}
       propertyPath: invulnerabilityTime
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3147967233325740625, guid: aee6dcd6236b8b6478d014710493ec39,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aee6dcd6236b8b6478d014710493ec39, type: 3}

@@ -20,7 +20,7 @@ public class LoadLevel : MonoBehaviour
         if (plyr.gameObject.tag == "Player")
         {
             TransitionExit.SetActive(true);
-            if (TransitionExit.activeInHierarchy==true)
+            if (TransitionExit.activeInHierarchy == true)
             {
                 SceneManager.LoadScene(levelToLoad);
             }

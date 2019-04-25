@@ -17,7 +17,7 @@ public class CameraScript2 : MonoBehaviour
     [Tooltip("Minimum or lowest camera position on the Y-axis.")]
     public float minHeight = -1f;
 
-    private bool perspective = false;
+    //private bool perspective = false;
     
 
     public Camera cameraObj;
