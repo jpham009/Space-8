@@ -30301,6 +30301,26 @@ Transform:
   m_Father: {fileID: 1381150564}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1767105504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6730150651498843907, guid: cfdbb778de94e8347a3e350a074f9297,
+    type: 3}
+  m_PrefabInstance: {fileID: 2764897399260767277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1767105512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767105504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d922c4338a550849bf21228b7f2c39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  enemyObject: {fileID: 1767105504}
 --- !u!1001 &1785748089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31434,6 +31454,16 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6803215733553617274, guid: aee6dcd6236b8b6478d014710493ec39,
+        type: 3}
+      propertyPath: initJumpForce.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803215733553617274, guid: aee6dcd6236b8b6478d014710493ec39,
+        type: 3}
+      propertyPath: initJumpForce.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3147967233325740625, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
       propertyPath: m_GravityScale
@@ -31442,7 +31472,7 @@ PrefabInstance:
     - target: {fileID: 3147967233325740625, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
       propertyPath: m_Mass
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3147967233325740625, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}

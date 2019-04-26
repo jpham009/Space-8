@@ -89,7 +89,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         // Set canTakeDamage to false to make sure that the player cannot take damage for a brief moment.
-        canTakeDamage = false;
+        //canTakeDamage = false;
 
         //Update the Health and Shield status bars.
         healthBar.UpdateBar(currentHealth, maxHealth);
@@ -101,7 +101,7 @@ public class PlayerHealth : MonoBehaviour
         // Update Oxygen 
         currentOxygen = 100;
 
-        FindObjectOfType<AudioManager>().Play("Breathing");
+        //FindObjectOfType<AudioManager>().Play("Breathing");
 
         // Update Oxygen Bar
         oxygenBar.UpdateBar(currentOxygen, maxOxygen);

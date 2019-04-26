@@ -15,16 +15,21 @@ public class bullet : MonoBehaviour
         bulletObj.GetComponent<Rigidbody2D>().velocity = transform.right * speed;
     }
     
-    void OnTriggerEnter2D (Collider2D hitInfo)
+    void OnTriggerEnter2D (Collider2D col)
     {
-        Debug.Log(hitInfo.name);
-        if (hitInfo.gameObject.tag == "Health Pack") { return; }
-        if (hitInfo.gameObject.tag == "Enemy")
+        Debug.Log(col.name);
+        //if (col.gameObject.tag == "Health Pack") { return; }
+        if (col.gameObject.tag == "Enemy")
         {
+            //Dealing damage to the enemy!!
+            GameObject enemy = col.gameObject;
+            EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+            enemyHealth.TakeDamage(damage);
+
             // creates animation when bullet hits and destroys instance after some time
             GameObject bulletHit = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
             Destroy(bulletHit, 0.5f);
-
+            
             // bullet disappears after hitting object
             Destroy(bulletObj);
         }

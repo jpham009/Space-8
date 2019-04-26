@@ -18,17 +18,16 @@ public class bulletEnemy : MonoBehaviour
     
     void OnTriggerEnter2D (Collider2D col)
     {
-        Debug.Log(col.name);
-        if (col.gameObject.tag == "Health Pack") { return; }
-        //Enemy enemy = hitInfo.GetComponent<Enemy>();
-        //if (enemy != null)
-        //{
-        //    enemy.TakeDamage(damage);
-        //}
 
-        if (col.name == "Player")
+        if (col.gameObject.tag == "Player")
         {
-            Debug.Log("Hit player!!");// bullet disappears after hitting object
+            //Dealing damage to the enemy!!
+            GameObject player = col.gameObject;
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            playerHealth.TakeDamage(damage);
+
+
+            // Debug.Log("Hit player!!");// bullet disappears after hitting object
             GameObject bulletHit = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
             Destroy(bulletHit, 0.5f);
             Destroy(bulletObject);

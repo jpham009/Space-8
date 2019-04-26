@@ -21,14 +21,15 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping;         //bool to tell if player is jumping or not
     Animator anim;
     private bool doubleJumped;      //tells if player has doublejumped or not 
+    private Vector2 initJumpForce;
 
-    
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();   //get reference to 	Rigidbody2D component
         anim = GetComponent<Animator>();
         doubleJumped = false;
+        initJumpForce = new Vector2((float)1.0, (float)1.5);
     }
 
     // Updates once per frame
@@ -81,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 isJumping = true;                       //we set isJumping to true
                 jumpTimeCounter = jumpTime;                 //set jumpTimeCounter
-                rb.velocity = Vector2.up * jumpForce;       //add velocity to player
+                rb.velocity = Vector2.up * jumpForce * initJumpForce;       //add velocity to player
             }
             else if (isGrounded == false && doubleJumped == false)
             {
