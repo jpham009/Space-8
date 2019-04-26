@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 3331007174568056276}
   - component: {fileID: 3456784781638551370}
   - component: {fileID: 3147967233325740589}
-  - component: {fileID: 3147967233325740629}
   m_Layer: 16
   m_Name: Player
   m_TagString: Player
@@ -76,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 395103583
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 573266913addc624fa0b0132a8a44a6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -223,23 +222,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firepoint: {fileID: 4049107532160021854}
   bulletPrefab: {fileID: 9032764682718881270, guid: dce47459bf3548a4bb9f985cea8b5f33,
-    type: 3}
---- !u!114 &3147967233325740629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3147967233325740590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d472b002c1a0e5b4191d0b87dad536c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  damage: 15
-  rb: {fileID: 3147967233325740625}
-  impactEffect: {fileID: 137212331473626196, guid: 8113eedeb281d334e96a19c3059d59dc,
     type: 3}
 --- !u!1 &5811084869133625235
 GameObject:

@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position = Camera.main.ViewportToWorldPoint(pos);
 
 
-        //here we set our player x velocity and y will not ne 
+        //here we set our player x velocity 
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
         //here we set the isGrounded

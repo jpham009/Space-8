@@ -16,7 +16,7 @@ public class Enemy_Movement : MonoBehaviour
     void Start()
     {
             player = GameObject.FindGameObjectWithTag("Player").transform;
-    		timeBtwShots = startTimeBtwShots;
+    		    timeBtwShots = startTimeBtwShots;
             rb = GetComponent<Rigidbody2D>();
     }
 
@@ -39,16 +39,24 @@ public class Enemy_Movement : MonoBehaviour
         	transform.position = Vector2.MoveTowards(transform.position, player.position, -speed*Time.deltaTime);
         }
 
-        if(timeBtwShots <= 0){
-        	Instantiate(projectile, transform.position, Quaternion.identity);
-        	timeBtwShots = startTimeBtwShots;
-        } else {
-        	timeBtwShots = Time.deltaTime;
+        if (timeBtwShots <= 0)
+        {
+            Instantiate(projectile, transform.position, Quaternion.identity);
+            timeBtwShots = startTimeBtwShots;
+        }
+        else
+        {
+            timeBtwShots = Time.deltaTime;
+        }
+
+
+
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Tile")
+        {
+            rb.AddForce(Vector2.up * 200f);
         }
     }
-            void OnTriggerEnter2D(Collider2D col)
-        {if (col.tag == "Tile"){
-            rb.AddForce(Vector2.up*200f);
-        }
-        }
 }
