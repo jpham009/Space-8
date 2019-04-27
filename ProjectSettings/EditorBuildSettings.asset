@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Jess_Scene.unity
     guid: da78bb1709eb4484cb32652d92a31408
   - enabled: 1
-    path: Assets/Scenes/Linda_Scene.unity
+    path: Assets/Scenes/Linda_scene.unity
     guid: 3c7736a67152dd543900ecf5d490871c
   - enabled: 1
     path: Assets/Scenes/Scene5.unity

@@ -64,7 +64,6 @@ public class PlayerHealth : MonoBehaviour
     {
         // Increase the current health by 50%.
         currentHealth += (maxHealth / 2);
-        FindObjectOfType<AudioManager>().Play("Heartbeat");
         // If the current health is greater than max, then set it to max.
         if (currentHealth > maxHealth)
             currentHealth = maxHealth;

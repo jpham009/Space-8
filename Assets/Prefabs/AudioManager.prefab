@@ -47,7 +47,7 @@ MonoBehaviour:
   sounds:
   - name: IceWorld
     clip: {fileID: 8300000, guid: 127b78767cd5a30458337d1faa7e67eb, type: 3}
-    volume: 1
+    volume: 0.8
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -56,28 +56,28 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: PlayerDeath
     clip: {fileID: 8300000, guid: 8c54cd7d25444f04abea2b8c2786803d, type: 3}
-    volume: 0.3
+    volume: 0.4
     volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.1
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: TakeDamage
-    clip: {fileID: 8300000, guid: 55b8fc4f9eadf0b4baea896ba0fdbc4a, type: 3}
-    volume: 0.3
+    clip: {fileID: 8300000, guid: 72fd2246d9e38db44b0aedb5fe1179c0, type: 3}
+    volume: 0.5
     volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.1
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: Zap
     clip: {fileID: 8300000, guid: c5ae314ec9abdd34f99c4561ae3f5bee, type: 3}
-    volume: 0.7
+    volume: 0.8
     volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.2
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
@@ -92,16 +92,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Acid_Rain
     clip: {fileID: 8300000, guid: 524b64a290590fb4aa8911af814e7389, type: 3}
-    volume: 1
+    volume: 0.8
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
-  - name: Rainbow_Road
+  - name: Rainbow_World
     clip: {fileID: 8300000, guid: e19dd6b9484825a4a8eaf12acd6018fe, type: 3}
-    volume: 1
+    volume: 0.8
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -110,7 +110,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Boss_Fight
     clip: {fileID: 8300000, guid: 5fb996b88bed4e447857d39fb8c57d54, type: 3}
-    volume: 1
+    volume: 0.8
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -123,6 +123,24 @@ MonoBehaviour:
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Heal
+    clip: {fileID: 8300000, guid: ddf77d0e6a197f54fade19b2b7cbc7c1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Bubbles
+    clip: {fileID: 8300000, guid: d6bd0b7fd1ae7e64ea363bc10672ba64, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0.1
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}

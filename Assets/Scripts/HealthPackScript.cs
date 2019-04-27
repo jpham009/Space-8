@@ -25,6 +25,7 @@ public class HealthPackScript : MonoBehaviour
                 player = GameObject.FindGameObjectWithTag("Player");
                 playerHealth = player.GetComponent<PlayerHealth>();
                 playerHealth.HealPlayer();
+                FindObjectOfType<AudioManager>().Play("Heal");
                 Destroy(healthItem);
                 Score.scoreValue += 5;
             }
@@ -34,6 +35,7 @@ public class HealthPackScript : MonoBehaviour
                 player = GameObject.FindGameObjectWithTag("Player");
                 playerHealth = player.GetComponent<PlayerHealth>();
                 playerHealth.Breathe();
+                FindObjectOfType<AudioManager>().Play("Bubbles");
                 Destroy(healthItem);
                 Score.scoreValue += 5;
             }
