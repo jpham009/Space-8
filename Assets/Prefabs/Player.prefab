@@ -204,10 +204,12 @@ MonoBehaviour:
   currentHealth: 0
   currentOxygen: 0
   invulnerabilityTime: 0.5
-  cam: {fileID: 0}
+  cam: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39, type: 3}
   player: {fileID: 3147967233325740590}
-  healthBar: {fileID: 0}
-  oxygenBar: {fileID: 0}
+  healthBar: {fileID: 6003028877524668454, guid: d7a4f37b68b4e9342b1c264f17613170,
+    type: 3}
+  oxygenBar: {fileID: 7417541442868990876, guid: e64acc9d55a4ebf48a15ddfd56a4999b,
+    type: 3}
 --- !u!114 &3147967233325740589
 MonoBehaviour:
   m_ObjectHideFlags: 0
