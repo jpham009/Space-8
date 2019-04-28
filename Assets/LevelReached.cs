@@ -9,11 +9,10 @@ public class LevelReached : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int levelIndex = PlayerPrefs.GetInt("LevelReached");
+        int levelIndex = PlayerPrefs.GetInt("LevelReached",0);
         
             levelReachedText.text = levelIndex.ToString();
         
-
     }
 
 }
