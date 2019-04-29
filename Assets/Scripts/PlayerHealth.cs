@@ -54,6 +54,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Die()
     {
+        Handheld.Vibrate();
         currentHealth = 0;
         FindObjectOfType<AudioManager>().Play("PlayerDeath");
         Destroy(player);
