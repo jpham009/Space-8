@@ -11,13 +11,13 @@ public class JEnemyMovement : MonoBehaviour
 		//public float startTimeBtwShots;
 		//public GameObject projectile;
 		public Transform player;
-        //public GameObject enemy; 
+        public Rigidbody2D enemy;
     // Start is called before the first frame update
     void Start()
     {
             player = GameObject.Find("Player").transform;
     		    //timeBtwShots = startTimeBtwShots;
-            //enemy = GetComponent<Rigidbody2D>();
+            enemy = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -53,9 +53,9 @@ public class JEnemyMovement : MonoBehaviour
 
 
     }
-    //    void OnTriggerEnter2D(Collider2D col)
-    //{if (col.tag == "Tile"){
-    //    enemy.AddForce(Vector2.up*200f);
-    //}
-    //}
+        void OnTriggerEnter2D(Collider2D col)
+    {if (col.tag == "Tile"){
+        enemy.AddForce(Vector2.up*200f);
+    }
+    }
 }
