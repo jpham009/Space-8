@@ -120,4 +120,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthItem: {fileID: 1567205509373101205}
-  player: {fileID: 0}
+  player: {fileID: 3147967233325740590, guid: aee6dcd6236b8b6478d014710493ec39, type: 3}
