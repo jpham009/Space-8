@@ -1908,7 +1908,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 60bd69d40362acc4da96c25de01d69a1, type: 2}
+  - {fileID: 2100000, guid: 3cfc0be163b028c47b1bdfbe43c4999b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16411,6 +16411,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4307168201465908092, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 937947039}
+    - target: {fileID: 4307168201465908092, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1549163123
+      objectReference: {fileID: 0}
     - target: {fileID: 4307168201465908082, guid: b6d5da050a22e714dba1f0a43e082475,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16516,26 +16526,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4307168201465908092, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 937947039}
-    - target: {fileID: 4307168201465908092, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1549163123
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1942824777}
-    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Shoot
-      objectReference: {fileID: 0}
     - target: {fileID: 4307168200926255947, guid: b6d5da050a22e714dba1f0a43e082475,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -16576,6 +16566,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 36.79001
       objectReference: {fileID: 0}
+    - target: {fileID: 4307168202606259683, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -157.20001
+      objectReference: {fileID: 0}
     - target: {fileID: 4307168200926255944, guid: b6d5da050a22e714dba1f0a43e082475,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -16585,6 +16580,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1942824777}
+    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shoot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6d5da050a22e714dba1f0a43e082475, type: 3}
