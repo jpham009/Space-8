@@ -2491,6 +2491,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 8288581574137108288, guid: d23eb9126fd411b46a9a4405bf2b9f30,
+        type: 3}
+      propertyPath: m_Layer
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 6551491208466304476, guid: d23eb9126fd411b46a9a4405bf2b9f30,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2601,11 +2606,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1113749316}
-    - target: {fileID: 8288581574137108288, guid: d23eb9126fd411b46a9a4405bf2b9f30,
-        type: 3}
-      propertyPath: m_Layer
-      value: 19
-      objectReference: {fileID: 0}
     - target: {fileID: 2303475805052079881, guid: d23eb9126fd411b46a9a4405bf2b9f30,
         type: 3}
       propertyPath: m_Layer
@@ -2737,6 +2737,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5811084869133625235, guid: aee6dcd6236b8b6478d014710493ec39,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3456784781638551370, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
       propertyPath: healthBar
@@ -2752,11 +2757,6 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1113749316}
-    - target: {fileID: 5811084869133625235, guid: aee6dcd6236b8b6478d014710493ec39,
-        type: 3}
-      propertyPath: m_Layer
-      value: 16
-      objectReference: {fileID: 0}
     - target: {fileID: 4049107532160021855, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
       propertyPath: m_Layer
@@ -3033,16 +3033,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5693591328897075977, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_Name
-      value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075977, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_Layer
-      value: 19
-      objectReference: {fileID: 0}
     - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
         type: 3}
       propertyPath: orthographic size
@@ -3052,6 +3042,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Depth
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075977, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075977, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_Layer
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5693591328897076213, guid: 455f80408a7117d4b8302075771fef39,
         type: 3}
