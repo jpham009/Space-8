@@ -12,19 +12,26 @@ public class JEnemyMovement : MonoBehaviour
 		//public GameObject projectile;
 		public Transform player;
         public Rigidbody2D enemy;
+        public float DifficultyFactor;
+
+
     // Start is called before the first frame update
     void Start()
     {
-            player = GameObject.Find("Player").transform;
-    		    //timeBtwShots = startTimeBtwShots;
-            enemy = GetComponent<Rigidbody2D>();
+        player = GameObject.Find("Player").transform;
+    	//timeBtwShots = startTimeBtwShots;
+        enemy = GetComponent<Rigidbody2D>();
+
+        //Increase speed if difficulty increases
+        DifficultyFactor = PlayerPrefs.GetFloat("Difficulty");
     }
 
     // Update is called once per frame
     void Update()
-    {   
+    {
+
         //flip enemy direction based on whether the player is on left or right
-        if(player.position.x < transform.position.x){
+        if (player.position.x < transform.position.x){
             //transform.localScale = new Vector3(1,1,1);
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
@@ -36,11 +43,11 @@ public class JEnemyMovement : MonoBehaviour
 
         //move enemy towards player
         if (Vector2.Distance(transform.position, player.position) > stoppingDistance) {
-        	transform.position = Vector2.MoveTowards(transform.position, player.position, speed*Time.deltaTime);
+        	transform.position = Vector2.MoveTowards(transform.position, player.position, speed*Time.deltaTime*DifficultyFactor);
         } else if (Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance){
         	transform.position = this.transform.position;
         } else if (Vector2.Distance(transform.position, player.position) < retreatDistance){
-        	transform.position = Vector2.MoveTowards(transform.position, player.position, -speed*Time.deltaTime);
+        	transform.position = Vector2.MoveTowards(transform.position, player.position, -speed*Time.deltaTime*DifficultyFactor);
         }
 
         //if(timeBtwShots <= 0){

@@ -37,7 +37,7 @@ public class HealthPackScript : MonoBehaviour
                 playerHealth.Breathe();
                 FindObjectOfType<AudioManager>().Play("Bubbles");
                 Destroy(healthItem);
-                Score.scoreValue += 5;
+                Score.scoreValue += 10;
             }
             else
             {

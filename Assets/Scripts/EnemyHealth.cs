@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
     static EnemyHealth instance;
     public static EnemyHealth Instance { get { return instance; } }
 
-    public int maxHealth = 100;
+    public int maxHealth = 100*(int)PlayerPrefs.GetFloat("Difficulty");
     private float currentHealth;
 
     public GameObject enemyObject;
@@ -33,6 +33,7 @@ public class EnemyHealth : MonoBehaviour
     public void Die()
     {
         currentHealth = 0;
+        Score.scoreValue += 100;
         //FindObjectOfType<AudioManager>().Play("PlayerDeath");
         Destroy(enemyObject);
     }
