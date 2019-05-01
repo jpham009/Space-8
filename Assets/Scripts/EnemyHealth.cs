@@ -33,7 +33,7 @@ public class EnemyHealth : MonoBehaviour
     public void Die()
     {
         currentHealth = 0;
-        Score.scoreValue += 100;
+        Score.scoreValue += 1250;
         //FindObjectOfType<AudioManager>().Play("PlayerDeath");
         Destroy(enemyObject);
     }

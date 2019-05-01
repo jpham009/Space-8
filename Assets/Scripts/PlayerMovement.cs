@@ -36,8 +36,10 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
 
-
-        anim.SetInteger("condition", 0);
+        if (isGrounded == true)
+        {
+            anim.SetInteger("condition", 0);
+        }
         //the moveInput will be 1 when we press right key and -1 for left key
         moveInput = CrossPlatformInputManager.GetAxis("Horizontal");
         if (moveInput > 0)//moving towards right side
@@ -68,13 +70,16 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded == false)
         {
             anim.SetInteger("condition", 2);
+            if (doubleJumped == true)
+            {
+                anim.SetInteger("condition", 3);
+            }
         }
         if (isGrounded == true)
         {
             doubleJumped = false;
         }
 
-        
         // User input for Jump and Double Jump 
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
         {
@@ -88,14 +93,16 @@ public class PlayerMovement : MonoBehaviour
             {
                 isJumping = true;
                 jumpTimeCounter = jumpTime;                 
-                rb.velocity = Vector2.up * jumpForce;       
-                doubleJumped = true;                   // double jump 
+                rb.velocity = Vector2.up * jumpForce;
+                doubleJumped = true;               // double jump 
+                Debug.Log("Double jump");
             }
         }
 
         //if Space key is pressed and isJumping is true
         if (CrossPlatformInputManager.GetButton("Jump")) // || CrossPlatformInputManager.GetButtonDown("Jump"))
         {
+
             if (isJumping == false)
             {
                 rb.drag = 6;  // Gravity jump (drag when falling) 
@@ -135,20 +142,20 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("entered");
-        Destroy(rb);
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    Debug.Log("entered");
+    //    Destroy(rb);
+    //}
 
-    private void OnTriggerExit(Collider other)
-    {
-        //if (other.CompareTag("Bound") == true)
-        //{
-        Debug.Log("exit");
-        Destroy(rb);
-        //}
-    }
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    //if (other.CompareTag("Bound") == true)
+    //    //{
+    //    Debug.Log("exit");
+    //    Destroy(rb);
+    //    //}
+    //}
 
     // used for sticking player to moving platform
     void OnCollisionEnter2D(Collision2D other)

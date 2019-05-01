@@ -24,7 +24,7 @@ public class FuelCellScript : MonoBehaviour
                 player = GameObject.FindGameObjectWithTag("Player");
                 FindObjectOfType<AudioManager>().Play("Heal");
                 Destroy(fuelcell);
-                Score.scoreValue += 1000;
+                Score.scoreValue += 850;
             }
             else
             {

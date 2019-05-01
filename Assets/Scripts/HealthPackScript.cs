@@ -27,7 +27,7 @@ public class HealthPackScript : MonoBehaviour
                 playerHealth.HealPlayer();
                 FindObjectOfType<AudioManager>().Play("Heal");
                 Destroy(healthItem);
-                Score.scoreValue += 5;
+                Score.scoreValue += 525;
             }
             else if(healthItem.gameObject.tag == "Oxygen Bubble")
             {
@@ -37,7 +37,7 @@ public class HealthPackScript : MonoBehaviour
                 playerHealth.Breathe();
                 FindObjectOfType<AudioManager>().Play("Bubbles");
                 Destroy(healthItem);
-                Score.scoreValue += 10;
+                Score.scoreValue += 350;
             }
             else
             {
