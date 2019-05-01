@@ -53,7 +53,7 @@ public class JEnemyMovement : MonoBehaviour
 
 
     }
-        void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {if (col.tag == "Tile"){
         enemy.AddForce(Vector2.up*200f);
     }
