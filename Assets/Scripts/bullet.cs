@@ -28,12 +28,11 @@ public class bullet : MonoBehaviour
 
             // creates animation when bullet hits and destroys instance after some time
             GameObject bulletHit = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
-            Destroy(bulletHit, 0.5f);
+            Destroy(bulletHit, 0.2f);
             
             // bullet disappears after hitting object
             Destroy(bulletObj);
         }
 
-        
     }
 }
