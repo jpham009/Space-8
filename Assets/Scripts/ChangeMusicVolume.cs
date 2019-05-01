@@ -13,6 +13,7 @@ public class ChangeMusicVolume : MonoBehaviour
     void Update()
     {
         myMusic.volume = Volume.value;
+        PlayerPrefs.SetFloat("Volume",myMusic.volume);
     }
 }
 
