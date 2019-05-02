@@ -7,7 +7,6 @@ public class PlayerHealth : MonoBehaviour
 {
     static PlayerHealth instance;
     public static PlayerHealth Instance { get { return instance; } }
-    bool canTakeDamage = true;
     public int maxHealth = 100;
     public int maxOxygen = 100; 
     public float currentHealth;
@@ -73,10 +72,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        // If player can't take damage, then return.
-        if (canTakeDamage == false)
-            return;
-
         currentHealth -= damage;
         FindObjectOfType<AudioManager>().Play("TakeDamage");
 
