@@ -17,7 +17,6 @@ public class PlayerHealth : MonoBehaviour
     public GameObject player;
     public SimpleHealthBar healthBar;
     public SimpleHealthBar oxygenBar;
-    public Animator bloodAnim;
 
     void Start()
     {
@@ -33,15 +32,7 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         // Oxygen drop rate
-        currentOxygen -= (float) 0.05;
-
-        if (currentHealth < 20f || currentOxygen < 20f)
-        {
-            bloodAnim.SetBool("sampleBool", true);
-        }
-        else {
-            bloodAnim.SetBool("sampleBool",false);
-        }
+        currentOxygen -= (float) 0.05; 
 
         if(currentOxygen <= 0)
         {
