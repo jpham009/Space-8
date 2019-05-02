@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 388387592}
   - component: {fileID: 388387591}
   - component: {fileID: 388387593}
-  m_Layer: 16
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Tile
   m_Icon: {fileID: 0}
@@ -552,8 +552,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 395103583
-  m_SortingLayer: 3
+  m_SortingLayerID: -1843188763
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -6047,12 +6047,12 @@ PrefabInstance:
     - target: {fileID: 3147967233375645039, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.25
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 3147967233375645039, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.54
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 3456784781638551370, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}

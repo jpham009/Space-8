@@ -10,14 +10,8 @@ public class WorldViewConstraint : MonoBehaviour
     public float MIN_Y;
     public float MAX_Y;
 
-
-
     // Start is called before the first frame update
-    void Start()
-    {
-   
-
-    }
+    void Start(){}
 
     // Update is called once per frame
     void Update()
@@ -25,8 +19,4 @@ public class WorldViewConstraint : MonoBehaviour
         transform.position = new Vector3( Mathf.Clamp(transform.position.x, MIN_X, MAX_X),
         Mathf.Clamp(transform.position.y, MIN_Y, MAX_Y), transform.position.z);
     }
-
-    
-
-       
 }

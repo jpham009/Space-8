@@ -6,34 +6,25 @@ public class EnemyHealth : MonoBehaviour
 {
     static EnemyHealth instance;
     public static EnemyHealth Instance { get { return instance; } }
-
     public int maxHealth = 50*(int)PlayerPrefs.GetFloat("Difficulty");
     private float currentHealth;
-
     public GameObject enemyObject;
 
 
     void Start()
     {
-
         //Initialize 
         currentHealth = maxHealth;
-
     }
-
-    //void Update()
-    //{
-    //    if (currentHealth <= 0)
-    //    {
-    //        Die();
-    //    }
-    //}
-
 
     public void Die()
     {
         currentHealth = 0;
         Score.scoreValue += 1250;
+        if (enemyObject.tag == "Boss")
+        {
+            Score.scoreValue += 8750;
+        }
         //FindObjectOfType<AudioManager>().Play("PlayerDeath");
         Destroy(enemyObject);
     }
@@ -50,12 +41,4 @@ public class EnemyHealth : MonoBehaviour
         }
 
     }
-
-    //void OnTriggerEnter2D(Collider2D playerbullet)
-    //{
-    //    if (playerbullet.gameObject.tag == "PlayerBullet")
-    //    {
-    //        TakeDamage(15);
-    //    }
-    //}
 }

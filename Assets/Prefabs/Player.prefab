@@ -32,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3147967233325740590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.27, y: -1.87, z: 0.07999992}
+  m_LocalPosition: {x: -16.65, y: -1.87, z: 0.07999992}
   m_LocalScale: {x: 1, y: 1, z: 0.2812312}
   m_Children:
   - {fileID: 31620403801125189}
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08705521, y: 0.045350313}
+  m_Offset: {x: -0.12460351, y: 0.045350313}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -112,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.948041, y: 2.308054}
+  m_Size: {x: 1.5247235, y: 2.308054}
   m_EdgeRadius: 0
 --- !u!114 &6803215733553617274
 MonoBehaviour:
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e3ab3c78b51074ab3d09cae9b251d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 10
   jumpForce: 10
   feetPos: {fileID: 31620403801125189}
   circleRadius: 0.3
@@ -146,10 +146,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 5
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 5
+  m_GravityScale: 4
   m_Material: {fileID: 6200000, guid: e78a1f1640bbe9d42a80c615ad553050, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -203,13 +203,11 @@ MonoBehaviour:
   maxOxygen: 100
   currentHealth: 0
   currentOxygen: 0
-  invulnerabilityTime: 0.5
-  cam: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39, type: 3}
+  invulnerabilityTime: 1
+  cam: {fileID: 0}
   player: {fileID: 3147967233325740590}
-  healthBar: {fileID: 6003028877524668454, guid: d7a4f37b68b4e9342b1c264f17613170,
-    type: 3}
-  oxygenBar: {fileID: 7417541442868990876, guid: e64acc9d55a4ebf48a15ddfd56a4999b,
-    type: 3}
+  healthBar: {fileID: 0}
+  oxygenBar: {fileID: 0}
 --- !u!114 &3147967233325740589
 MonoBehaviour:
   m_ObjectHideFlags: 0

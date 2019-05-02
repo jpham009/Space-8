@@ -20,7 +20,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
-
         //Initialize Player 
         currentHealth = maxHealth;
         currentOxygen = maxOxygen;
@@ -51,7 +50,6 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-
     public void Die()
     {
         Handheld.Vibrate();
@@ -69,7 +67,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth > maxHealth)
             currentHealth = maxHealth;
 
-        // Update the Simple Health Bar with the new Health values.
+        // Update health bar.
         healthBar.UpdateBar(currentHealth, maxHealth);
     }
 
@@ -88,23 +86,15 @@ public class PlayerHealth : MonoBehaviour
             Die();
         }
 
-        // Set canTakeDamage to false to make sure that the player cannot take damage for a brief moment.
-        //canTakeDamage = false;
-
-        //Update the Health and Shield status bars.
+        //Update the Health Bar.
         healthBar.UpdateBar(currentHealth, maxHealth);
-
     }
 
     public void Breathe()
     {
         // Update Oxygen 
         currentOxygen = 100;
-
-        //FindObjectOfType<AudioManager>().Play("Breathing");
-
-        // Update Oxygen Bar
+       // Update Oxygen Bar
         oxygenBar.UpdateBar(currentOxygen, maxOxygen);
     }
-
 }
