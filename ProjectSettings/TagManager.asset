@@ -16,6 +16,7 @@ TagManager:
   - Tile
   - PlayerBullet
   - Fuel Cell
+  - Boss
   layers:
   - Default
   - TransparentFX
