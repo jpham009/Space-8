@@ -11832,12 +11832,12 @@ PrefabInstance:
     - target: {fileID: 2574217686785272933, guid: c976e5b17d81dfc4cb0496695703ccc1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 117.1
+      value: 52.7
       objectReference: {fileID: 0}
     - target: {fileID: 2574217686785272933, guid: c976e5b17d81dfc4cb0496695703ccc1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.3
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2574217686785272933, guid: c976e5b17d81dfc4cb0496695703ccc1,
         type: 3}
@@ -12776,26 +12776,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 4307168200926255944, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 73788538}
-    - target: {fileID: 4307168200926255944, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Pause
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1024253758}
-    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Shoot
-      objectReference: {fileID: 0}
     - target: {fileID: 4307168201465908082, guid: b6d5da050a22e714dba1f0a43e082475,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12900,6 +12880,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307168200926255944, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 73788538}
+    - target: {fileID: 4307168200926255944, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1024253758}
+    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shoot
       objectReference: {fileID: 0}
     - target: {fileID: 4307168202606259683, guid: b6d5da050a22e714dba1f0a43e082475,
         type: 3}
@@ -14113,41 +14113,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_Depth
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: far clip plane
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_OcclusionCulling
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_HDR
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5693591328897076213, guid: 455f80408a7117d4b8302075771fef39,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14208,6 +14173,41 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1024253757}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_Depth
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 455f80408a7117d4b8302075771fef39, type: 3}
 --- !u!1001 &6789243571321823179

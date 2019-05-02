@@ -23,7 +23,7 @@ public class JEnemyMovement : MonoBehaviour
         enemy = GetComponent<Rigidbody2D>();
 
         //Increase speed if difficulty increases
-        DifficultyFactor = PlayerPrefs.GetFloat("Difficulty");
+        //DifficultyFactor = PlayerPrefs.GetFloat("Difficulty");
     }
 
     // Update is called once per frame

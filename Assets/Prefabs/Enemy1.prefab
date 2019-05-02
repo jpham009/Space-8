@@ -213,6 +213,8 @@ MonoBehaviour:
   stoppingDistance: 1
   retreatDistance: 1
   player: {fileID: 3147967233375645039, guid: aee6dcd6236b8b6478d014710493ec39, type: 3}
+  enemy: {fileID: 0}
+  DifficultyFactor: 0
 --- !u!114 &1767105512
 MonoBehaviour:
   m_ObjectHideFlags: 0
