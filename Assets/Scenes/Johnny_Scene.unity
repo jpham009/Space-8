@@ -4042,8 +4042,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 8, y: -6, z: 0}
     second:
-      m_TileIndex: 6
-      m_TileSpriteIndex: 10
+      m_TileIndex: 8
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -10444,11 +10444,11 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: c23a69d5fd018cb4893dd6f63e6d1948, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 953
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 954
     m_Data: {fileID: 11400000, guid: c8c1676ac52960f4ab87f931331f86c1, type: 2}
   - m_RefCount: 136
     m_Data: {fileID: 11400000, guid: d21cd8fd940c18440ae237099ddffda2, type: 2}
@@ -10473,9 +10473,9 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 797c49613db3cec47a013c193ea25e1b, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300004, guid: b00b9ff8e2a7f494c9679b0b59c599bb, type: 3}
-  - m_RefCount: 953
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 954
     m_Data: {fileID: 21300000, guid: 6e2a00b7b96be324493faa0b003a58c1, type: 3}
   - m_RefCount: 136
     m_Data: {fileID: 21300000, guid: d4eea71807a878140974c263b950d164, type: 3}
@@ -11102,18 +11102,6 @@ CompositeCollider2D:
         Y: -90000000
       - X: 190000000
         Y: -90000000
-    - - X: 80000000
-        Y: -60000000
-      - X: 80000000
-        Y: -59843752
-      - X: 80156248
-        Y: -60000000
-    - - X: 89921872
-        Y: -60000000
-      - X: 90000000
-        Y: -59921876
-      - X: 90000000
-        Y: -60000000
   m_CompositePaths:
     m_Paths:
     - - {x: 48, y: 9}
@@ -11393,12 +11381,6 @@ CompositeCollider2D:
       - {x: -32, y: -3}
       - {x: -32, y: -9}
       - {x: 19, y: -9}
-    - - {x: 8, y: -6}
-      - {x: 8, y: -5.9843755}
-      - {x: 8.015625, y: -6}
-    - - {x: 8.9921875, y: -6}
-      - {x: 9, y: -5.9921875}
-      - {x: 9, y: -6}
   m_VertexDistance: 0.0005
 --- !u!50 &201373597
 Rigidbody2D:
@@ -12794,6 +12776,26 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 4307168200926255944, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 73788538}
+    - target: {fileID: 4307168200926255944, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1024253758}
+    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shoot
+      objectReference: {fileID: 0}
     - target: {fileID: 4307168201465908082, guid: b6d5da050a22e714dba1f0a43e082475,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12898,26 +12900,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307168200926255944, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 73788538}
-    - target: {fileID: 4307168200926255944, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Pause
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1024253758}
-    - target: {fileID: 4307168201158505914, guid: b6d5da050a22e714dba1f0a43e082475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Shoot
       objectReference: {fileID: 0}
     - target: {fileID: 4307168202606259683, guid: b6d5da050a22e714dba1f0a43e082475,
         type: 3}
@@ -14131,6 +14113,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_Depth
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5693591328897076213, guid: 455f80408a7117d4b8302075771fef39,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14191,41 +14208,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1024253757}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_Depth
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: far clip plane
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_OcclusionCulling
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_HDR
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 455f80408a7117d4b8302075771fef39, type: 3}
 --- !u!1001 &6789243571321823179
@@ -14235,6 +14217,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3147967233325740590, guid: aee6dcd6236b8b6478d014710493ec39,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3147967233375645039, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14289,11 +14276,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3147967233325740590, guid: aee6dcd6236b8b6478d014710493ec39,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3456784781638551370, guid: aee6dcd6236b8b6478d014710493ec39,
         type: 3}
