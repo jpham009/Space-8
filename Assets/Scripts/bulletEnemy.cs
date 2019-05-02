@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class bulletEnemy : MonoBehaviour
 {
-    public float speed = 20f;
-    public int damage = 10;
+    public float speed = 15f;
+    public int damage = 3;
     public Rigidbody2D bullet;
     public GameObject bulletObject;
     public GameObject impactEffect;
@@ -34,8 +34,16 @@ public class bulletEnemy : MonoBehaviour
            // Debug.Log("Destroyed bullet");
         }
 
-        // creates animation when bullet hits and destroys instance after some time
-        
+        if (col.gameObject.tag == "Tile")
+        {
+            // creates animation when bullet hits and destroys instance after some time
+            GameObject bulletHit = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(bulletHit, 0.2f);
+
+            // bullet disappears after hitting object
+            Destroy(bulletObject);
+        }
+
 
     }
 }

@@ -33,6 +33,14 @@ public class bullet : MonoBehaviour
             // bullet disappears after hitting object
             Destroy(bulletObj);
         }
+        if(col.gameObject.tag == "Tile")
+        {
+            // creates animation when bullet hits and destroys instance after some time
+            GameObject bulletHit = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(bulletHit, 0.2f);
 
+            // bullet disappears after hitting object
+            Destroy(bulletObj);
+        }
     }
 }
