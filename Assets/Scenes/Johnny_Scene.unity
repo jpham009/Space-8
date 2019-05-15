@@ -13542,26 +13542,12 @@ Transform:
   m_Father: {fileID: 1381150564}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1767105504 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6730150651498843907, guid: cfdbb778de94e8347a3e350a074f9297,
+--- !u!50 &1767105509 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 6730150651498843905, guid: cfdbb778de94e8347a3e350a074f9297,
     type: 3}
   m_PrefabInstance: {fileID: 2764897399260767277}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1767105512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767105504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d922c4338a550849bf21228b7f2c39b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 50
-  enemyObject: {fileID: 1767105504}
 --- !u!4 &1767105513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6730150651498843934, guid: cfdbb778de94e8347a3e350a074f9297,
@@ -14099,6 +14085,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 974340220}
+    - target: {fileID: 6730150651498843933, guid: cfdbb778de94e8347a3e350a074f9297,
+        type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1767105509}
+    - target: {fileID: 6730150651498843933, guid: cfdbb778de94e8347a3e350a074f9297,
+        type: 3}
+      propertyPath: DifficultyFactor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfdbb778de94e8347a3e350a074f9297, type: 3}
 --- !u!1001 &5693591328941814645
@@ -14108,6 +14104,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_Depth
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
+        type: 3}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5693591328897075977, guid: 455f80408a7117d4b8302075771fef39,
         type: 3}
       propertyPath: m_Name
@@ -14173,41 +14204,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1024253757}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_Depth
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: far clip plane
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_OcclusionCulling
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5693591328897075978, guid: 455f80408a7117d4b8302075771fef39,
-        type: 3}
-      propertyPath: m_HDR
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 455f80408a7117d4b8302075771fef39, type: 3}
 --- !u!1001 &6789243571321823179
