@@ -30017,8 +30017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7993b77fbb122884dbc9c6d085ad7bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TransitionExit: {fileID: 0}
-  levelToLoad: Transition
 --- !u!1 &1381150563
 GameObject:
   m_ObjectHideFlags: 0
@@ -33693,6 +33691,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288581574137108288, guid: d23eb9126fd411b46a9a4405bf2b9f30,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6551491208466304476, guid: d23eb9126fd411b46a9a4405bf2b9f30,
         type: 3}
