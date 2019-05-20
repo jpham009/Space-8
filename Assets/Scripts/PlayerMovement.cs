@@ -88,21 +88,23 @@ public class PlayerMovement : MonoBehaviour
                 isJumping = true;                       //we set isJumping to true
                 jumpTimeCounter = jumpTime;                 //set jumpTimeCounter
                 rb.velocity = Vector2.up * jumpForce * initJumpForce;       //add velocity to player
+                rb.velocity = new Vector2(moveInput * jumpForce * (float)1.5, rb.velocity.y);
             }
             else if (isGrounded == false && doubleJumped == false)
             {
                 isJumping = true;
                 jumpTimeCounter = jumpTime;                 
                 rb.velocity = Vector2.up * jumpForce;
+                rb.velocity = new Vector2(moveInput * jumpForce, rb.velocity.y);
                 doubleJumped = true;               // double jump 
                 Debug.Log("Double jump");
             }
         }
 
         //if Space key is pressed and isJumping is true
-        if (CrossPlatformInputManager.GetButton("Jump")) // || CrossPlatformInputManager.GetButtonDown("Jump"))
+        if (CrossPlatformInputManager.GetButton("Jump")) 
         {
-
+            rb.velocity = new Vector2 (moveInput * jumpForce, rb.velocity.y);
             if (isJumping == false)
             {
                 rb.drag = 6;  // Gravity jump (drag when falling) 
