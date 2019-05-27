@@ -8,6 +8,7 @@ public class JEnemyWeapon : MonoBehaviour {
 	public GameObject enemybullet;
 
     public Transform firepoint;
+    private GameObject player;
 
     float fireRate;
 	float nextFire;
@@ -18,19 +19,25 @@ public class JEnemyWeapon : MonoBehaviour {
     void Start () {
 		fireRate = 1f;
 		nextFire = Time.time;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        player = GameObject.Find("Player");
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 		CheckIfTimeToFire ();
 	}
 
 	void CheckIfTimeToFire()
 	{
-		if (Time.time > nextFire) {
-            GameObject bullet = (GameObject)Instantiate(enemybullet, firepoint.position, firepoint.rotation);
-            Destroy(bullet, 1.0f);
-            nextFire = Time.time + fireRate;
+        if (Mathf.Abs(Vector2.Distance(transform.position, player.transform.position)) < 15)
+        {
+            if (Time.time > nextFire)
+            {
+                GameObject bullet = (GameObject)Instantiate(enemybullet, firepoint.position, firepoint.rotation);
+                Destroy(bullet, 1.0f);
+                nextFire = Time.time + fireRate;
+            }
 		}
     
     }

@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         // Oxygen drop rate
-        currentOxygen -= (float) 0.05; 
+        currentOxygen -= 3 * Time.deltaTime; 
 
         if(currentOxygen <= 0)
         {
